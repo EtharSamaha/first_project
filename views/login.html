@@ -3,30 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <title>Login Form</title>
-    <link rel="stylesheet" type="text/css" href="index.css">
-    <script src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/index.css">
+    <script src="../js/script.js"></script>
 </head>
 
 
 <body>
 
-   <header class="header_class">
+<header class="header_class">
     <nav >
-        <ul >
-
-            <li dir ="rtl"><a  href="index.html"  style="color: darkgrey ">Home</a></li>
-            <li dir = "ltr"><a href="login.html"  style="color: darkgrey ">Login</a></li>
-            <li dir ="ltr"><a href="index.html"  style="color: aliceblue ">Register</a></li>
-
+        <ul dir="ltr">
+            <li><a href="index.html" style="color: darkgrey ">Home</a></li>
+            <li class="float-right"><a href="index.html" style="color: aliceblue ">Register</a></li>
+            <li class="float-right"><a href="login.html" style="color: darkgrey ">Login</a></li>
         </ul>
     </nav>
-   </header>
+</header>
 
          <h1 class="head_class" > Login Form</h1>
          <h4  class="head_class"> Login using this form </h4>
 
+   <form action="" method="post" onsubmit="myFunction1()">
           <div>
-
               <label><b>Email Address<br></b></label>
               <input  id="input2" type="email" placeholder="Your email" oninput="this.className=''" required>
 
@@ -34,10 +32,11 @@
               <input  id="input3" type="password" oninput="this.className=''" required>
                   <br> <br> <br>
 
-              <button type="submit" onclick="myFunction1()" style="background-color: midnightblue ; width: 500px ; color: aliceblue ; height:50px ; "> Login </button>
+              <button type="submit" style="background-color: midnightblue ; width: 500px ; color: aliceblue ; height:50px ; "> Login </button>
 
               <p style="text-align: center">To create a new account <a href="index.html"> Register</a>.</p>
            </div>
+   </form>
 
 </body>
 </html>
